@@ -191,7 +191,8 @@ tried to build tailscale into thingino firmware but couldn't get it working. thi
 
 # turns out
 
-- the end user's device is an iPhone, there is no tinyCam monitor app available for iOS requires 
+- the end user's device is an iPhone, there is no tinyCam monitor app available for iOS, oh apple...
+- the iOS [solution](https://github.com/austinp0573/rpi-ts-ip-cam-passthrough/tree/main/ios-workaround)
 
 ---
 
