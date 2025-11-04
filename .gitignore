@@ -1,0 +1,13 @@
+# don't commit actual config with passwords
+config.yaml
+
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# logs
+*.log
+.DS_Store
+Thumbs.db
+notes
