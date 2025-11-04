@@ -1,0 +1,18 @@
+[Unit]
+Description=MediaMTX RTSP Server
+After=network.target camera-bridge.service
+Wants=camera-bridge.service
+
+[Service]
+Type=simple
+User=austin
+WorkingDirectory=/home/austin/mediamtx
+ExecStart=/home/austin/mediamtx/mediamtx
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+

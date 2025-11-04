@@ -189,6 +189,9 @@ tried to build tailscale into thingino firmware but couldn't get it working. thi
 - All the other people who put in all the mountains of effort to get something like this working
 - [Scott](https://github.com/battlehax) - for telling me about a kewl open source firmware for IP cameras
 
+# turns out
+
+- the end user's device is an iPhone, there is no tinyCam monitor app available for iOS requires 
 
 ---
 

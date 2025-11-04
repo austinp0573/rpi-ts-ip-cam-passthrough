@@ -1,0 +1,30 @@
+# minimal mediamtx config for camera bridge
+# this shows only what you need to change
+
+# important: disable rtsp server to avoid port conflict with camera-bridge
+# find this line near the top of mediamtx.yml and change it:
+rtsp: no
+
+# this is because camera-bridge already uses port 8554 for socat forwarding
+# mediamtx will still pull rtsp from camera, just won't serve its own rtsp server
+
+# at the bottom of mediamtx.yml, find the paths: section and add your camera
+# should be around line 554
+paths:
+  # 'camera' becomes the url path: http://tailscale-ip:8889/camera
+  camera:
+    # pull from camera's actual ip on local network
+    # use camera username, password, ip, and stream path
+    source: rtsp://thingino:password@192.168.2.50:554/ch0
+    
+    # tcp is more reliable than udp for forwarding
+    sourceProtocol: tcp
+    
+    # only pull stream when someone is watching (saves cpu/bandwidth)
+    sourceOnDemand: yes
+    
+    # note: don't add "runOnDemand: restart" - causes error when using source
+
+# then access at:
+# http://tailscale-ip:8889/camera-main
+# http://tailscale-ip:8889/camera-sub
