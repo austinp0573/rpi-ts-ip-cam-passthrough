@@ -183,13 +183,11 @@ tried to build tailscale into thingino firmware but couldn't get it working. thi
 
 ## gratitude
 
-## credits
-
 - [thingino](https://github.com/themactep/thingino-firmware) the epic open source firmware for Ingenic SoC IP cameras
 - [themactep](https://github.com/themactep) for thingino firmware
 - [wltechblog](https://github.com/wltechblog) for his work on the project and the youtube content that explains it all
 - All the other people who put in all the mountains of effort to get something like this working
-- Scott - for telling me about a kewl open source firmware for IP cameras
+- [Scott](https://github.com/battlehax) - for telling me about a kewl open source firmware for IP cameras
 
 
 ---
